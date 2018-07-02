@@ -1,2 +1,7 @@
-script:
- - echo "Build has been completed!1111111!!!!.22!..!!....!....2222222"
+---
+build:
+  image: golang
+  commands:
+    - go get
+    - go build
+    - go test
