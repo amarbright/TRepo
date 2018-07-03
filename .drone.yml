@@ -1,7 +1,6 @@
 ---
-build:
-  image: golang
+pipeline
+check-build:
+  image: ubuntu
   commands:
-    - go get
-    - go build
-    - go test
+    - echo "Welcome"
