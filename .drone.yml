@@ -1,5 +1,5 @@
 ---
-pipeline
+pipeline:
 check-build:
   image: ubuntu
   commands:
