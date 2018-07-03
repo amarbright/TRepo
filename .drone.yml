@@ -3,4 +3,4 @@ pipeline:
   check-build:
     image: ubuntu
     script:
-    - echo 'Welcome'
+    - echo Welcome
