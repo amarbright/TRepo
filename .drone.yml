@@ -1,6 +1,6 @@
 ---
 pipeline:
-check-build:
-  image: ubuntu
-  commands:
-    - echo "Welcome"
+  check-build:
+    image: ubuntu
+    commands:
+    - echo 'Welcome'
