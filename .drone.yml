@@ -9,7 +9,7 @@ pipeline:
     webhook: https://hooks.slack.com/services/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
     channel: automation
     username: drone
-    template:
+    template: >
       {{#success build.status}}
       Hey Amar, build {{build.number}} succeed...
       {{else}}
