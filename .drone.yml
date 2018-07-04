@@ -6,7 +6,7 @@ pipeline:
     - echo "Welcome"
   notify:
     image: plugins/slack
-    webhook: https://hooks.slack.com/services/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
+    webhook: https://hooks.slack.com/services/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
     channel: automation
     username: drone
     template: >
