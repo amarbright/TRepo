@@ -2,5 +2,5 @@
 pipeline:
   check-build:
     image: ubuntu
-    script:
-    - echo Welcome
+    commands:
+    - echo "Welcome"
