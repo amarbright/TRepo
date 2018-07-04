@@ -3,7 +3,7 @@ pipeline:
   check-build:
     image: ubuntu
     commands:
-    - echo "Welcome"
+    - echo "Welcome To Drone World"
   notify:
     image: plugins/slack
     webhook: https://hooks.slack.com/services/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
