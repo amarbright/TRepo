@@ -7,10 +7,10 @@ pipeline:
       - pull_request
     image: maven:3-jdk-8
     commands:
-    - mvn clean install
+    - mvn -B clean package
   publish:
     artifactory:
-      url: http://localhost:8081/artifactory/automation_local_maven/
+      url: http://localhost:8081/artifactory
       username: admin
       password: asiya123 
       pom: pom.xml 
