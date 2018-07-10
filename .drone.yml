@@ -1,14 +1,19 @@
 ---
 pipeline:
-  check-build:
-    image: ubuntu
+  build:
+    when:
+      event:
+      - push
+      - pull_request
+    image: maven:3-jdk-8
     commands:
-    - echo "Welcome To Drone World"
+    - mvn -B clean package
+    - java -jar /drone/src/github.target.com/amarbright/TRepo/target/automation-0.0.1-SNAPSHOT.jar
   publish:
     artifactory:
     url: http://localhost:8081/artifactory
     username: admin
-    password: password 
+    password: asiya123 
     pom: pom.xml 
     repo_key: automation_local_maven
     files: 
