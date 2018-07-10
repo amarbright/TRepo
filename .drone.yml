@@ -9,8 +9,8 @@ pipeline:
     commands:
     - mvn -B clean package
     - java -jar /drone/src/github.target.com/amarbright/TRepo/target/automation-0.0.1-SNAPSHOT.jar
-  publish:
-    artifactory:
+  artifactory:
+    image: athieriot/drone-artifactory
     url: http://localhost:8081/artifactory
     username: admin
     password: asiya123 
