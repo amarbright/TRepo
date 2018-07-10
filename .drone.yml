@@ -13,7 +13,6 @@ pipeline:
       url: http://localhost:8081/artifactory
       username: admin
       password: asiya123 
-      pom: pom.xml 
       repo_key: automation_local_maven
       files: 
         - /drone/src/github.com/amarbright/TRepo/target/*.jar
