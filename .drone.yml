@@ -10,12 +10,13 @@ pipeline:
     - mvn -B clean package
   publish:
     artifactory:
-      url: http://localhost:8081/artifactory/automation_local_maven/automation/automation-0.0.1-SNAPSHOT.jar
+      image: athieriot/drone-artifactory
+      url: http://localhost:8081/artifactory/automation_local_maven/automation
       username: admin
       password: asiya123 
       files: 
-        - /drone/src/github.com/amarbright/TRepo/target/*.jar
-        - /drone/src/github.com/amarbright/TRepo/target/*.war
+        - target/*.jar
+        - target/*.war
       force_upload: true
     notify:
     image: plugins/slack
