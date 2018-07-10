@@ -8,7 +8,7 @@ pipeline:
     image: maven:3-jdk-8
     commands:
     - mvn -B clean package
-    - java -jar /drone/src/github.target.com/amarbright/TRepo/target/automation-0.0.1-SNAPSHOT.jar
+    - java -jar /drone/src/github.com/amarbright/TRepo/target/automation-0.0.1-SNAPSHOT.jar
   artifactory:
     image: athieriot/drone-artifactory
     url: http://localhost:8081/artifactory
