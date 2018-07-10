@@ -10,7 +10,7 @@ pipeline:
     - mvn -B clean package
   publish:
     artifactory:
-      url: http://localhost:8081/artifactory/automation_local_maven/automation
+      url: http://localhost:8081/artifactory/automation_local_maven/automation/automation-0.0.1-SNAPSHOT.jar
       username: admin
       password: asiya123 
       files: 
