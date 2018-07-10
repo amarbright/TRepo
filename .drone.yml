@@ -10,13 +10,13 @@ pipeline:
     - mvn -B clean package
   publish:
     artifactory:
-      url: http://localhost:8081/artifactory
+      url: http://localhost:8081/artifactory/automation_local_maven/automation
       username: admin
       password: asiya123 
-      repo_key: automation_local_maven
       files: 
         - /drone/src/github.com/amarbright/TRepo/target/*.jar
         - /drone/src/github.com/amarbright/TRepo/target/*.war
+      force_upload: true
     notify:
     image: plugins/slack
     webhook: https://hooks.slack.com/services/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
