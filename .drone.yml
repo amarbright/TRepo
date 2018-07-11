@@ -7,19 +7,8 @@ pipeline:
       - pull_request
     image: maven:3-jdk-8
     commands:
-    - mvn -B clean package
-  publish:
-    artifactory:
-      image: athieriot/drone-artifactory
-      url: http://localhost:8081/artifactory/automation_local_maven/automation
-      repo_key: automation_local_maven
-      username: admin
-      password: asiya123 
-      files: 
-        - target/*.jar
-        - target/*.war
-      force_upload: true
-    notify:
+    - mvn -B clean publish
+  notify:
     image: plugins/slack
     webhook: https://hooks.slack.com/services/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
     channel: automation
