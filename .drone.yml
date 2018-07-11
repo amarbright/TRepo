@@ -7,7 +7,7 @@ pipeline:
       - pull_request
     image: maven:3-jdk-8
     commands:
-    - mvn -B clean publish
+    - mvn -B clean package
   notify:
     image: plugins/slack
     webhook: https://hooks.slack.com/services/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
