@@ -12,6 +12,7 @@ pipeline:
     artifactory:
       image: athieriot/drone-artifactory
       url: http://localhost:8081/artifactory/automation_local_maven/automation
+      repo_key: automation_local_maven
       username: admin
       password: asiya123 
       files: 
