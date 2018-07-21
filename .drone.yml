@@ -17,5 +17,12 @@ pipeline:
       password: admin
       pom: pom.xml
       repo_key: trepo-maven
+      force_upload: true
       files: 
       - target/*.jar  
+  publish-image:
+    image: plugins/docker
+    repo: trepo-maven
+    tags: latest
+    files: 
+      - target/*.jar
