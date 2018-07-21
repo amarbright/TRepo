@@ -10,7 +10,6 @@ pipeline:
     - mvn -B clean package
   publish_jar:
       image: jmccann/drone-artifactory
-      url: http://35.200.216.88:8081/artifactory/
       repo_key: trepo-maven
       files:
         - target/*.jar
