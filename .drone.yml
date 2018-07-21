@@ -10,8 +10,8 @@ pipeline:
     - mvn -B clean package
   publish:
     image: plugins/docker
-  - username: admin
-  - password: admin
+    username: jfrog
+    password: oviya123
     repo: trepo
     tags: [ 1.0.0, 1.0, latest ]
   notify:
