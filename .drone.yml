@@ -22,7 +22,7 @@ pipeline:
       - target/*.jar  
   publish-image:
     image: plugins/docker
-    repo: trepo-maven
+    repo: trepo
     tags: latest
     files: 
       - target/*.jar
