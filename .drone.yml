@@ -15,6 +15,7 @@ pipeline:
       url: http://35.200.216.88:8081
       username: admin
       password: admin
+      pom: pom.xml
       repo_key: trepo-maven
       files: 
       - target/*.jar  
