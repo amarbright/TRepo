@@ -16,4 +16,3 @@ pipeline:
       repo_key: trepo-maven
       files: 
         - target/*.jar
-        - target/*.war
