@@ -8,7 +8,7 @@ pipeline:
     image: maven:3-jdk-8
     commands:
     - mvn -B clean package
-  publish:
+plugin:
     artifactory:
       image: athieriot/drone-artifactory
       url: http://35.200.216.88:8081
