@@ -22,6 +22,7 @@ pipeline:
       - target/*.jar  
   publish-image:
     image: plugins/docker
+    url: http://35.200.216.88:8081
     repo: trepo
     tags: latest
     files: 
