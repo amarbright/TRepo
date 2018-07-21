@@ -10,10 +10,8 @@ pipeline:
     - mvn -B clean package
   publish:
     image: plugins/docker
-    username: jfrog
-    password: oviya123
     repo: trepo
-    tags: [ 1.0.0, 1.0, latest ]
+    tags: latest
   notify:
     image: plugins/slack
     webhook: https://hooks.slack.com/services/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
