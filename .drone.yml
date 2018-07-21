@@ -9,5 +9,7 @@ pipeline:
     commands:
     - mvn -B clean package
   publish_jar:
-      image: jmccann/drone-artifactory
+      image: athieriot/drone-artifactory
+      environment:
+        - DRONE_VERSION=0.8
         
