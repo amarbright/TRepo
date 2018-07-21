@@ -12,4 +12,9 @@ pipeline:
       image: athieriot/drone-artifactory
       environment:
         - DRONE_VERSION=0.8
-        
+      url: http://35.200.216.88:8081
+      username: admin
+      password: admin
+      repo_key: trepo-maven
+      files: 
+      - target/*.jar  
