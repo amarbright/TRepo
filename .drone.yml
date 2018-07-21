@@ -10,6 +10,7 @@ pipeline:
     - mvn -B clean package
   publish:
     artifactory:
+      image: athieriot/drone-artifactory
       url: http://35.200.216.88:8081
       username: admin
       password: admin 
