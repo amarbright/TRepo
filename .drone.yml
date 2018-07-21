@@ -10,7 +10,7 @@ pipeline:
     - mvn -B clean package
   publish:
     image: plugins/docker
-    repo: trepo
+    repo: trepo-maven
     tags: latest
   notify:
     image: plugins/slack
