@@ -10,9 +10,9 @@ pipeline:
     - mvn -B clean package
   publish_jar:
       image: athieriot/drone-artifactory:latest
-      url: http://35.200.216.88:8081/artifactory/webapp/#/artifacts/browse/tree/General/trepo-maven
+      url: http://35.200.216.88:8081
+      username: admin
+      password: admin
       repo_key: trepo-maven
       files:
         - target/*.jar
-      when:
-        branch: master
