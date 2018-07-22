@@ -1,3 +1,5 @@
 FROM java:8
-ADD ./target/*.jar /home/amarbright
+
+COPY ./target/*.jar /home/amarbright
+RUN ls -a
 CMD java -jar /home/amarbright/automation-0.0.1-SNAPSHOT.jar
