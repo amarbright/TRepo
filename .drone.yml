@@ -20,8 +20,7 @@ pipeline:
       force_upload: true
       files: 
       - target/*.jar
-      - target/*.war
-  publish-image:
+    publish-image:
     image: plugins/docker:17.05
     registry: http://35.200.145.139:8081
     repo: trepo
