@@ -22,8 +22,8 @@ pipeline:
       - target/*.jar
   publish-image:
     image: plugins/docker:17.05
-    username: admin
-    password: admin
+    username: amarbright
+    password: asiya123
     repo: amarbright/trepo
     tag: latest
   notify:
