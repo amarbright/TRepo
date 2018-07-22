@@ -12,7 +12,7 @@ pipeline:
       image: athieriot/drone-artifactory
       environment:
         - DRONE_VERSION=0.8
-      url: http://35.200.216.88:8081
+      url: http://35.200.145.139:8081
       username: admin
       password: admin
       pom: pom.xml
@@ -22,9 +22,8 @@ pipeline:
       - target/*.jar  
   publish-image:
     image: plugins/docker
-    url: http://35.200.216.88:8081
+    registry: http://35.200.145.139:8081
+    username: admin
+    password: admin
     repo: trepo
     tags: latest
-    files: 
-      - target/*.jar
-      - target/*.war
