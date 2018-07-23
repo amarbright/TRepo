@@ -24,7 +24,7 @@ pipeline:
     image: plugins/docker:17.05
     environment:
         - DRONE_VERSION=0.8
-    registry: http://35.200.145.139:8081
+    registry: http://35.200.145.139:8081/artifactory/trepo
     repo: 35.200.145.139:8081/artifactory/trepo
     username: admin
     password: admin
