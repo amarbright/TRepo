@@ -22,9 +22,10 @@ pipeline:
       - target/*.jar
   publish-image:
     image: plugins/docker:17.05
-    username: amarbright
-    password: asiya123
+    registry: 35.200.145.139:5000
     repo: amarbright/trepo
+    username: admin
+    password: admin
     tag: latest
   notify:
     image: plugins/slack
