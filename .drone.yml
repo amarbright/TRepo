@@ -23,7 +23,8 @@ pipeline:
   publish-image:
     image: plugins/docker:17.05
     registry: 35.200.145.139:5000
-    repo: amarbright/trepo
+    insecure: true
+    repo: 35.200.145.139:5000/amarbright/trepo
     username: admin
     password: admin
     tag: latest
