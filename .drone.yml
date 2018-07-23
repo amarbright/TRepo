@@ -21,24 +21,14 @@ pipeline:
       files: 
       - target/*.jar
   publish-image:
-    image: jmccann/drone-artifactory
+    image: plugins/docker:17.05
     environment:
         - DRONE_VERSION=0.8
-    url: http://35.200.145.139:8081
+    registry: http://35.200.145.139:8081
+    repo: 35.200.145.139:8081/artifactory/trepo
     username: admin
     password: admin
-    pom: pom.xml
     repo_key: trepo
+    insecure: true
     force_upload: true
     tag: latest
-  notify:
-    image: plugins/slack
-    webhook: https://hooks.slack.com/services/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
-    channel: automation
-    username: drone
-    template: >
-      {{#success build.status}}
-      Hey Amar, build {{build.number}} succeed & moved to Repo.!!!!..
-      {{else}}
-      Hey Amar, build {{build.number}} Failed, fix me....!!!!!!!!.....
-      {{/success}}
