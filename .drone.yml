@@ -21,10 +21,8 @@ pipeline:
       files: 
       - target/*.jar
   publish-image:
-    image: plugins/docker:17.05
-    registry: 35.200.145.139:5000
-    insecure: true
-    repo: 35.200.145.139:5000/amarbright/trepo
+    image: jmccann/drone-artifactory
+    url: http://35.200.145.139:8081/artifactory/trepo
     username: admin
     password: admin
     tag: latest
