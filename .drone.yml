@@ -27,6 +27,7 @@ pipeline:
     url: http://35.200.145.139:8081
     username: admin
     password: admin
+    pom: pom.xml
     repo_key: trepo
     force_upload: true
     tag: latest
