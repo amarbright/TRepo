@@ -24,8 +24,8 @@ pipeline:
     image: plugins/docker:17.05
     environment:
         - DRONE_VERSION=0.8
-    registry: http://35.200.145.139:8081
-    repo: 35.200.145.139:8081/artifactory/trepo
+    registry: http://35.200.145.139:8081//artifactory/docker-remote
+    repo: 35.200.145.139:8081/artifactory/docker-remote
     username: admin
     password: admin
     insecure: true
