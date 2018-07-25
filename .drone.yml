@@ -14,6 +14,7 @@ pipeline:
         - DRONE_VERSION=0.8
     registry: http://35.200.145.139:8081
     repo: http://35.200.145.139:8081/artifactory/trepo
+    tags: latest
     username: admin
     password: admin
     insecure: true
