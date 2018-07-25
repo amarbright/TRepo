@@ -13,7 +13,7 @@ pipeline:
     environment:
         - DRONE_VERSION=0.8
     registry: 35.200.145.139:8081/artifactory
-    repo: trepo
+    repo: 35.200.145.139:8081/artifactory/trepo
     username: admin
     password: admin
     insecure: true
