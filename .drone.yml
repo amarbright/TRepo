@@ -4,7 +4,6 @@ pipeline:
     when:
       event:
       - push
-      - pull_request
     image: maven:3-jdk-8
     commands:
     - mvn -B clean package
